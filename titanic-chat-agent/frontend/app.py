@@ -8,7 +8,7 @@ question = st.text_input("Ask a question about Titanic dataset:")
 
 if st.button("Ask"):
     response = requests.post(
-        "http://127.0.0.1:8000/ask",
+        "https://your-backend-name.onrender.com/ask",
         json={"question": question}
     )
 
